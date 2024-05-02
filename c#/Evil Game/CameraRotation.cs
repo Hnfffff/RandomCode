@@ -20,7 +20,6 @@ public class CameraRotation : MonoBehaviour
     public GameObject player;
     public Transform orientation;
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -38,6 +37,5 @@ public class CameraRotation : MonoBehaviour
 
         transform.localEulerAngles = new Vector3(-mouseRoty, mouseRotx, 0); //maths shit idk really what it does put if like making the transform into a vector 3
         orientation.transform.localEulerAngles = new Vector3(transform.rotation.x, mouseRotx, transform.rotation.z); // set the cameras rotation to the new vector 3
-
     }
 }
