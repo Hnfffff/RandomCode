@@ -8,7 +8,6 @@ public class Turdscript : MonoBehaviour
 
     private void Awake()//on spawn in
     {
-
         Destroy(gameObject, life); // destory gameobject after 5 seconbds
     }
 }
