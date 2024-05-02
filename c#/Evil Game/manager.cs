@@ -38,7 +38,6 @@ public class manager : MonoBehaviour
         allpicked = 0;
         Text.text = "";
         bigText.text = "";
-
     }
 
     private void Update() //call once a frame
@@ -53,9 +52,9 @@ public class manager : MonoBehaviour
                 ghost1spawned = true; //make bool true
 
                 StartCoroutine(blueorb()); //start function
-
             }
         }
+        
         if(greenplaced == true) //if bool true
         {
             GameObject Greenplaced = GameObject.Find("placed orbgreen"); //same as above just for a different game object
@@ -67,6 +66,7 @@ public class manager : MonoBehaviour
                 StartCoroutine(greenorb());
             }
         }
+        
         if(redplaced == true) //same as above just for a different game object
         {
             GameObject Redplaced = GameObject.Find("placed orbred");
@@ -80,7 +80,7 @@ public class manager : MonoBehaviour
             }
         }
 
-        if(blueplaced == true && greenplaced == true && redplaced ==true) //chack if all bools and true
+        if(blueplaced == true && greenplaced == true && redplaced == true) //chack if all bools and true
         {
             allplaced = true; //make bool ture
             Destroy(Door); //destory 'door' gameobject
@@ -124,7 +124,5 @@ public class manager : MonoBehaviour
         bigText.text = "GET OUT"; //changes different text piece
         yield return new WaitForSeconds(5); //wait 5 seconds
         Text.text = "";
-    }
-
-    
+    } 
 }
