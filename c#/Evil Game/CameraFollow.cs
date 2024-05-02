@@ -8,11 +8,13 @@ public class CameraFollow : MonoBehaviour
     public Vector3 cameraFollow;
     public Quaternion cameraRot;
     // Start is called before the first frame update
+    
     void Start()
     {
         cameraFollow = cameraHolder.transform.position; // set cameraFlollow to a gameobjects position
         cameraRot = cameraHolder.transform.rotation; //set cameraRot to a gameobjects rottion
     }
+    
     // Update is called once per frame
     void Update()
     {
