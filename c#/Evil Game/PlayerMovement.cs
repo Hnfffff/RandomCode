@@ -53,7 +53,6 @@ public class PlayerMovement : MonoBehaviour
     public List<string> Inventory = new List<string>();
     public TMP_Text text;
     
-
     // Start is called before the first frame update
     void Start()
     {
@@ -81,7 +80,6 @@ public class PlayerMovement : MonoBehaviour
         //Throwitems(); this works i just removed it cos it diddnt fit the final version
 
         Console.WriteLine(Inventory); // flag
-
     }
 
     void MovementStuff()
@@ -238,7 +236,6 @@ public class PlayerMovement : MonoBehaviour
             manager.allpicked += 1;
             Debug.Log(manager.allpicked);
             StartCoroutine(orbgreen());
-
         }
 
 
