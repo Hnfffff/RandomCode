@@ -10,5 +10,4 @@ public class Buttons : MonoBehaviour
     {
         SceneManager.LoadScene("bazinga", LoadSceneMode.Single); //load gaeme scene
     }
-
 }
