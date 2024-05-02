@@ -30,7 +30,6 @@ public class EnemyAi : MonoBehaviour
         {
             goal = GameObject.Find("Player").transform; // make the object fo to the player once all the orbs are picked up
         }
-
     }
 
     void GetDestination()
@@ -39,6 +38,4 @@ public class EnemyAi : MonoBehaviour
         s = randomLocation.ToString();//convert that number to a string
         goal = GameObject.Find(s).transform; //set the variable goal to a gameobject in the scene that has the name 'S'
     }
-
-
 }
